@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grządka – Garden Defense</title>
+<meta name="description" content="Cozy tower defense for one thumb: plant ladybugs, spiders and sunflowers to save your veggie garden from pests. 20 levels, four seasons, night levels, no ads.">
+<meta property="og:title" content="Grządka – Garden Defense">
+<meta property="og:description" content="Cozy tower defense: plant ladybugs and sunflowers to save your veggie garden!">
+<meta property="og:image" content="img/og_image.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root {
+    --bg: #fff8ea; --card: #ffffff; --ink: #3a2a1c; --muted: #7a6650;
+    --green: #4f8a3c; --green-dark: #3a6a2b; --leaf: #e6f2d8; --line: #ead9bb; --accent: #e8743b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1f1a14; --card: #2a231b; --ink: #f4ead8; --muted: #c2ad90; --leaf: #2c3a22; --line: #4a3c2c; --green: #7fbf5e; --green-dark: #9fd47f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+  a { color: var(--green-dark); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 40px 0 24px; text-align: center; }
+  header img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 16px 0 4px; }
+  .tag { font-size: 1.15rem; color: var(--muted); margin: 0 auto 24px; max-width: 560px; }
+  .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 14px 26px; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+  .btn.primary { background: var(--green); color: #fff; }
+  .btn.secondary { border: 2px solid var(--line); color: var(--ink); }
+  .note { font-size: .9rem; color: var(--muted); margin-top: 10px; }
+  .shots { display: flex; gap: 14px; overflow-x: auto; padding: 24px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { width: 220px; height: auto; aspect-ratio: 9/16; border-radius: 16px; scroll-snap-align: center; flex: none; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+  section { padding: 24px 0; }
+  h2 { font-size: 1.5rem; margin: 0 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; }
+  summary { font-weight: 700; cursor: pointer; }
+  details p { margin: 8px 0 0; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 40px; text-align: center; color: var(--muted); font-size: .95rem; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/icon.png" alt="Grządka game icon" width="112" height="112">
+    <h1>Grządka – Garden Defense</h1>
+    <p class="tag">A cozy tower defense for one thumb. Plant cheerful defenders along the path and keep every carrot and tomato safe from hungry pests.</p>
+    <div class="buttons">
+      <a class="btn primary" href="play/">▶ Play in your browser</a>
+      <a class="btn secondary" href="#android">Android (coming soon)</a>
+    </div>
+    <p class="note">Free · no ads · no sign-in · 6 languages</p>
+  </header>
+
+  <div class="shots" aria-label="Screenshots">
+    <img src="img/01_map.webp" alt="World map with levels from Spring to Winter" loading="lazy">
+    <img src="img/02_battle.webp" alt="Ladybugs and spiders defending the vegetable patch" loading="lazy">
+    <img src="img/03_night.webp" alt="Night level lit by fireflies" loading="lazy">
+    <img src="img/04_boss.webp" alt="Boss fight against a wild boar" loading="lazy">
+    <img src="img/05_garden.webp" alt="My garden with decorations" loading="lazy">
+    <img src="img/06_encyclopedia.webp" alt="Encyclopedia of defenders and pests" loading="lazy">
+  </div>
+
+  <section>
+    <h2>What's inside</h2>
+    <div class="grid">
+      <div class="card"><h3>🐞 Plant, upgrade, protect</h3><p>Ladybugs shoot fast, spiders slow pests with webs, wasps blast swarms, sundews swallow small bugs, frogs snipe the toughest ones and sunflowers give nectar.</p></div>
+      <div class="card"><h3>🌸 Four seasons, 20 levels</h3><p>A winding world map from Spring to Winter, with armored beetles, sneaky moles, self-healing grubs, moths, field mice and diving voles.</p></div>
+      <div class="card"><h3>🌙 Night levels</h3><p>At night your towers see less. Plant fireflies to light up the garden and bring your defenders back to full range.</p></div>
+      <div class="card"><h3>👑 Boss fights</h3><p>The Locust that summons swarms, the armored Giant Chafer and the Wild Boar that goes wild when wounded.</p></div>
+      <div class="card"><h3>🏡 Collection &amp; my garden</h3><p>Earn stars, coins and cards, upgrade your towers for good and decorate your own garden with gnomes, birdhouses and a pond.</p></div>
+      <div class="card"><h3>✨ Made for one thumb</h3><p>Short levels, big buttons, portrait mode. English, Polish, German, Spanish, French and Portuguese.</p></div>
+    </div>
+  </section>
+
+  <section id="android">
+    <h2>Questions</h2>
+    <details><summary>When is the Android version coming?</summary><p>Grządka is in testing on Google Play right now. Until then you can play the full game in your browser, on a phone or a computer.</p></details>
+    <details><summary>Does it cost anything? Are there ads?</summary><p>No. The game is free, has no ads and no in-app purchases.</p></details>
+    <details><summary>What data do you collect?</summary><p>Only anonymous gameplay events (like "level started" or "tower placed") with a random install ID, to balance the game. No names, emails, location or ad IDs, and you can turn it off in Settings. Details in the <a href="privacy/">privacy policy</a>.</p></details>
+    <details><summary>Where is my progress saved?</summary><p>On your device only (in the browser: in the browser's storage). Clearing site data or uninstalling the game removes it.</p></details>
+  </section>
+
+  <footer>
+    <a href="privacy/">Privacy policy</a> · <a href="mailto:contact@grabqa.com">contact@grabqa.com</a> · <a href="play/">Play</a>
+    <p>© 2026 GrabQA</p>
+  </footer>
+</div>
+</body>
+</html>
